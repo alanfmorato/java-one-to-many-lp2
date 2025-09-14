@@ -300,3 +300,7 @@ classDiagram
 
 ```
 ---
+
+## Diagrama de classes UML (Image)
+<img width="3840" height="1653" alt="Untitled diagram _ Mermaid Chart-2025-09-14-202045" src="https://github.com/user-attachments/assets/67a4cda7-e09d-4852-8e85-1b55f27436be" />
+
