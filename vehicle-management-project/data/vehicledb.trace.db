@@ -1,0 +1,15 @@
+2025-09-28 18:44:04.580368-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS vehicle (id IDENTITY PRIMARY KEY, vin VARCHAR(17) NOT NULL UNIQUE, plate VARCHAR(50) NOT NULL UNIQUE, make VARCHAR(100), model VARCHAR(100), [*]year INT, current_mileage BIGINT, status VARCHAR(50), created_at TIMESTAMP, updated_at TIMESTAMP)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS vehicle (id IDENTITY PRIMARY KEY, vin VARCHAR(17) NOT NULL UNIQUE, plate VARCHAR(50) NOT NULL UNIQUE, make VARCHAR(100), model VARCHAR(100), year INT, current_mileage BIGINT, status VARCHAR(50), created_at TIMESTAMP, updated_at TIMESTAMP) [42001-224]
+2025-09-28 18:44:17.626318-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS vehicle (id IDENTITY PRIMARY KEY, vin VARCHAR(17) NOT NULL UNIQUE, plate VARCHAR(50) NOT NULL UNIQUE, make VARCHAR(100), model VARCHAR(100), [*]year INT, current_mileage BIGINT, status VARCHAR(50), created_at TIMESTAMP, updated_at TIMESTAMP)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS vehicle (id IDENTITY PRIMARY KEY, vin VARCHAR(17) NOT NULL UNIQUE, plate VARCHAR(50) NOT NULL UNIQUE, make VARCHAR(100), model VARCHAR(100), year INT, current_mileage BIGINT, status VARCHAR(50), created_at TIMESTAMP, updated_at TIMESTAMP) [42001-224]
+2025-09-28 18:54:55.930717-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO vehicle(vin, plate, make, model, [*]year, current_mileage, status, created_at, updated_at) VALUES(?,?,?,?,?,?,?,?,?)"; expected "identifier"; SQL statement:
+INSERT INTO vehicle(vin, plate, make, model, year, current_mileage, status, created_at, updated_at) VALUES(?,?,?,?,?,?,?,?,?) [42001-224]
+2025-09-28 18:56:01.385413-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO vehicle(vin, plate, make, model, [*]year, current_mileage, status, created_at, updated_at) VALUES(?,?,?,?,?,?,?,?,?)"; expected "identifier"; SQL statement:
+INSERT INTO vehicle(vin, plate, make, model, year, current_mileage, status, created_at, updated_at) VALUES(?,?,?,?,?,?,?,?,?) [42001-224]
+2025-09-28 18:59:06.845650-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO vehicle(vin, plate, make, model, [*]year, current_mileage, status, created_at, updated_at) VALUES(?,?,?,?,?,?,?,?,?)"; expected "identifier"; SQL statement:
+INSERT INTO vehicle(vin, plate, make, model, year, current_mileage, status, created_at, updated_at) VALUES(?,?,?,?,?,?,?,?,?) [42001-224]
