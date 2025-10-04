@@ -1,0 +1,248 @@
+{
+	"info": {
+		"_postman_id": "505150f5-514b-4398-8e31-fd746b6eab26",
+		"name": "Vehicle Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38286763"
+	},
+	"item": [
+		{
+			"name": "Vehicles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vehicles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vehicle",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vehicles/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vehicles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vehicle",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vin\": \"1HGCM82633A004352\",\r\n    \"plate\": \"XYZ-9876\",\r\n    \"make\": \"Toyota\",\r\n    \"model\": \"Corolla XEi\",\r\n    \"year\": 2020,\r\n    \"currentMileage\": 20000,\r\n    \"status\": \"IN_REPAIR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/vehicles/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vehicles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vehicle By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vehicles/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vehicles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vehicles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vin\": \"1HGCM82638A004354\",\r\n    \"plate\": \"ADC-1135\",\r\n    \"make\": \"Toyota\",\r\n    \"model\": \"Corolla\",\r\n    \"year\": 2020,\r\n    \"currentMileage\": 15000,\r\n    \"status\": \"DECOMMISSIONED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/vehicles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintenance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vehicleId\": 4,\r\n    \"type\": \"OIL_CHANGE\",\r\n    \"performedAt\": \"2024-11-20T10:30:00Z\",\r\n    \"mileageAtService\": 18000,\r\n    \"notes\": \"Troca de óleo e filtro\",\r\n    \"cost\": 250.00,\r\n    \"createdBy\": \"João Mecânico\",\r\n    \"subtype\": \"PERFORMED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/maintenance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maintenance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintenance By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/maintenance/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maintenance",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintenance",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/maintenance/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maintenance",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintenance",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vehicleId\": 2,\r\n    \"type\": \"OIL_CHANGE\",\r\n    \"performedAt\": \"2024-09-25T14:00:00Z\",\r\n    \"mileageAtService\": 19050,\r\n    \"notes\": \"Revisão extra de óleo\",\r\n    \"cost\": 270.00,\r\n    \"createdBy\": \"João Mecânico\",\r\n    \"subtype\": \"PERFORMED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/maintenance/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maintenance",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maintenance By Vehicle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/maintenance?vehicleId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"maintenance"
+					],
+					"query": [
+						{
+							"key": "vehicleId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
